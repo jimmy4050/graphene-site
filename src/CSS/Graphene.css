@@ -1,0 +1,259 @@
+.graphene-container {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--websitebg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.graphene-hero-section {
+  color: var(--headingtext);
+  text-align: center;
+  padding: 20px;
+}
+
+.graphene-hero-section h1 {
+  font-size: 40px;
+  margin: 0;
+  font-weight: bold;
+  color: var(--headingtext);
+}
+
+.graphene-hero-section p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: var(--headingsubtext);
+}
+
+.graphene-hero-section hr {
+  width: 10%;
+  margin: 20px auto;
+  border: 1px solid var(--btnbg);
+  opacity: 0.8;
+}
+
+.graphene-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.graphene-text {
+  flex: 1;
+  max-width: 48%;
+  text-align: justify;
+}
+
+.graphene-text2 {
+  flex: 1;
+  max-width: 100%;
+  text-align: justify;
+}
+
+.graphene-info-box {
+  flex: 1;
+  background: whitesmoke;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.graphene-info-box h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.graphene-info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.graphene-info-box ul li {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.graphene-info-box ul li span {
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--btnbg);
+  color: white;
+}
+
+.round {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .graphene-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .graphene-text,
+  .graphene-info-box {
+    max-width: 100%;
+    text-align: justify;
+  }
+
+  .graphene-hero-section h1 {
+    font-size: 32px;
+  }
+
+  .graphene-hero-section p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .graphene-container {
+    padding: 80px 20px;
+    height: auto;
+  }
+
+  .graphene-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .graphene-text,
+  .graphene-info-box {
+    max-width: 100%;
+    text-align: start;
+  }
+
+  .graphene-hero-section {
+    padding: 40px 10px;
+  }
+
+  .graphene-hero-section h1 {
+    font-size: 32px;
+  }
+
+  .graphene-hero-section p {
+    font-size: 16px;
+  }
+
+  .graphene-info-box ul {
+    padding-left: 0;
+  }
+
+  .graphene-info-box ul li {
+    justify-content: start;
+    font-size: 14px;
+  }
+
+  .round {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .graphene-hero-section {
+    padding: 30px 5px;
+  }
+
+  .graphene-hero-section h1 {
+    font-size: 28px;
+  }
+
+  .graphene-hero-section p {
+    font-size: 14px;
+  }
+
+  .graphene-text,
+  .graphene-info-box {
+    padding: 10px;
+  }
+
+  .graphene-info-box ul li {
+    font-size: 12px;
+  }
+
+  .round {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .graphene-container {
+    padding: 30px;
+    height: auto;
+  }
+
+  .graphene-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .graphene-text {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .graphene-info-box {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+  }
+
+  .graphene-hero-section h1 {
+    font-size: 36px;
+  }
+
+  .graphene-hero-section p {
+    font-size: 18px;
+  }
+
+  .graphene-info-box ul li {
+    font-size: 16px;
+  }
+
+  .round {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+  }
+}
